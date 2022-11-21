@@ -14,6 +14,8 @@
 		4ADCFF9B292B865D00B25F5A /* ReadingList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCFF99292B865D00B25F5A /* ReadingList.xcdatamodeld */; };
 		4ADCFF9D292B865E00B25F5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ADCFF9C292B865E00B25F5A /* Assets.xcassets */; };
 		4ADCFFA0292B865E00B25F5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ADCFF9E292B865E00B25F5A /* LaunchScreen.storyboard */; };
+		4ADCFFA8292B88BA00B25F5A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCFFA7292B88BA00B25F5A /* User.swift */; };
+		4ADCFFAA292BA2EB00B25F5A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCFFA9292BA2EB00B25F5A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4ADCFF9C292B865E00B25F5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ADCFF9F292B865E00B25F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ADCFFA1292B865E00B25F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ADCFFA7292B88BA00B25F5A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4ADCFFA9292BA2EB00B25F5A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				4ADCFF92292B865D00B25F5A /* SceneDelegate.swift */,
 				4ADCFF94292B865D00B25F5A /* ViewController.swift */,
 				4ADCFF96292B865D00B25F5A /* Main.storyboard */,
+				4ADCFFA9292BA2EB00B25F5A /* LoginViewController.swift */,
+				4ADCFFA7292B88BA00B25F5A /* User.swift */,
 				4ADCFF9C292B865E00B25F5A /* Assets.xcassets */,
 				4ADCFF9E292B865E00B25F5A /* LaunchScreen.storyboard */,
 				4ADCFFA1292B865E00B25F5A /* Info.plist */,
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADCFFAA292BA2EB00B25F5A /* LoginViewController.swift in Sources */,
 				4ADCFF95292B865D00B25F5A /* ViewController.swift in Sources */,
 				4ADCFF91292B865D00B25F5A /* AppDelegate.swift in Sources */,
 				4ADCFF9B292B865D00B25F5A /* ReadingList.xcdatamodeld in Sources */,
+				4ADCFFA8292B88BA00B25F5A /* User.swift in Sources */,
 				4ADCFF93292B865D00B25F5A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +302,7 @@
 				DEVELOPMENT_TEAM = 4N5CZF3G4Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ReadingList/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyReadingLsit;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,6 +331,7 @@
 				DEVELOPMENT_TEAM = 4N5CZF3G4Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ReadingList/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyReadingLsit;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
