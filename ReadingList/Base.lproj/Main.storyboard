@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,19 +31,53 @@
                                     <action selector="loginPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Nt-of-fAL"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XzN-1k-AZf">
+                                <rect key="frame" x="32" y="355" width="329" height="431"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IjC-xh-Ziy">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="bookCell" id="7Hv-FH-OZP">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Zwk-u4-NFH">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="128" height="128"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Books" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmC-nO-um9">
+                                <rect key="frame" x="32" y="299" width="99" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rCe-aN-mO3" secondAttribute="trailing" constant="32" id="C6N-iD-Vxn"/>
                             <constraint firstItem="rCe-aN-mO3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="FqB-hD-gyg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XzN-1k-AZf" secondAttribute="bottom" constant="32" id="LbA-Iq-bV3"/>
+                            <constraint firstItem="XzN-1k-AZf" firstAttribute="top" secondItem="XmC-nO-um9" secondAttribute="bottom" constant="32" id="MDh-cL-X9d"/>
                             <constraint firstItem="rCe-aN-mO3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="128" id="Mfx-kC-KH2"/>
+                            <constraint firstItem="XmC-nO-um9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="N1T-a1-FD5"/>
+                            <constraint firstItem="XmC-nO-um9" firstAttribute="top" secondItem="rCe-aN-mO3" secondAttribute="bottom" constant="32" id="byH-Yt-TNO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YeW-YU-3Mv" secondAttribute="trailing" constant="8" id="dsK-HB-QN9"/>
+                            <constraint firstItem="XzN-1k-AZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="i1f-tv-FK2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XzN-1k-AZf" secondAttribute="trailing" constant="32" id="mcP-l2-v4Z"/>
                             <constraint firstItem="YeW-YU-3Mv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="qXA-iy-c7K"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bye-qE-IEF"/>
                     <connections>
+                        <outlet property="collectionView" destination="XzN-1k-AZf" id="gGs-8V-EXI"/>
                         <outlet property="greetingLabel" destination="rCe-aN-mO3" id="eG9-I2-TA6"/>
                         <outlet property="loginButton" destination="YeW-YU-3Mv" id="gvL-6B-2m5"/>
                         <segue destination="5Wq-X6-x9v" kind="presentation" identifier="presentLoginSeque" modalPresentationStyle="pageSheet" id="JVT-0N-bya"/>
@@ -50,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="152" y="-27"/>
+            <point key="canvasLocation" x="151.90839694656489" y="-27.464788732394368"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OMo-i0-6vb">

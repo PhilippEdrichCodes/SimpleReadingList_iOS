@@ -16,6 +16,7 @@
 		4ADCFFA0292B865E00B25F5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ADCFF9E292B865E00B25F5A /* LaunchScreen.storyboard */; };
 		4ADCFFA8292B88BA00B25F5A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCFFA7292B88BA00B25F5A /* User.swift */; };
 		4ADCFFAA292BA2EB00B25F5A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCFFA9292BA2EB00B25F5A /* LoginViewController.swift */; };
+		4ADCFFAC292BB81600B25F5A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCFFAB292BB81600B25F5A /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4ADCFFA1292B865E00B25F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ADCFFA7292B88BA00B25F5A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4ADCFFA9292BA2EB00B25F5A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4ADCFFAB292BB81600B25F5A /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +67,9 @@
 				4ADCFF90292B865D00B25F5A /* AppDelegate.swift */,
 				4ADCFF92292B865D00B25F5A /* SceneDelegate.swift */,
 				4ADCFF94292B865D00B25F5A /* ViewController.swift */,
-				4ADCFF96292B865D00B25F5A /* Main.storyboard */,
 				4ADCFFA9292BA2EB00B25F5A /* LoginViewController.swift */,
+				4ADCFF96292B865D00B25F5A /* Main.storyboard */,
+				4ADCFFAB292BB81600B25F5A /* Book.swift */,
 				4ADCFFA7292B88BA00B25F5A /* User.swift */,
 				4ADCFF9C292B865E00B25F5A /* Assets.xcassets */,
 				4ADCFF9E292B865E00B25F5A /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 			files = (
 				4ADCFFAA292BA2EB00B25F5A /* LoginViewController.swift in Sources */,
 				4ADCFF95292B865D00B25F5A /* ViewController.swift in Sources */,
+				4ADCFFAC292BB81600B25F5A /* Book.swift in Sources */,
 				4ADCFF91292B865D00B25F5A /* AppDelegate.swift in Sources */,
 				4ADCFF9B292B865D00B25F5A /* ReadingList.xcdatamodeld in Sources */,
 				4ADCFFA8292B88BA00B25F5A /* User.swift in Sources */,
